@@ -1,5 +1,8 @@
 import reverseString from "../reverseString";
 
+test("Should throw an error if no argument is given", () => {
+  expect(() => reverseString()).toThrow("Reverse String expects an argument");
+});
 test("Should return an empty string when given an empty string", () => {
   expect(reverseString("")).toBe("");
 });

@@ -1,5 +1,8 @@
 import { capitalize } from "../capitalize";
 
+test("Should throw an error if no argument is given", () => {
+  expect(() => capitalize()).toThrow("Capitalize expects an argument");
+});
 test("Should return an empty string when given an empty string", () => {
   expect(capitalize("")).toBe("");
 });
